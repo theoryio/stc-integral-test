@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'stc-font';
+  src: url('/assets/fonts/STCForward-Thin.eot');
+  src: local('â˜º'), url('/assets/fonts/STCForward-Thin.woff') format('woff'), url('/assets/fonts/STCForward-Thin.ttf') format('truetype'), url('/assets/fonts/STCForward-Thin.svg') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'stc-font';
+  src: url('/assets/fonts/STCForward-Light.eot');
+  src: local('â˜º'), url('/assets/fonts/STCForward-Light.woff') format('woff'), url('/assets/fonts/STCForward-Light.ttf') format('truetype'), url('/assets/fonts/STCForward-Light.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'stc-font';
+  src: url('/assets/fonts/STCForward-Regular.eot');
+  src: local('â˜º'), url('/assets/fonts/STCForward-Regular.woff') format('woff'), url('/assets/fonts/STCForward-Regular.ttf') format('truetype'), url('/assets/fonts/STCForward-Regular.svg') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'stc-font';
+  src: url('/assets/fonts/STCForward-Medium.eot');
+  src: local('â˜º'), url('/assets/fonts/STCForward-Medium.woff') format('woff'), url('/assets/fonts/STCForward-Medium.ttf') format('truetype'), url('/assets/fonts/STCForward-Medium.svg') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'stc-font';
+  src: url('/assets/fonts/STCForward-Bold.eot');
+  src: local('â˜º'), url('/assets/fonts/STCForward-Bold.woff') format('woff'), url('/assets/fonts/STCForward-Bold.ttf') format('truetype'), url('/assets/fonts/STCForward-Bold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'stc-font';
+  src: url('/assets/fonts/STCForward-ExtraBold.eot');
+  src: local('â˜º'), url('/assets/fonts/STCForward-ExtraBold.woff') format('woff'), url('/assets/fonts/STCForward-ExtraBold.ttf') format('truetype'), url('/assets/fonts/STCForward-Medium.svg') format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 29, 37, 45;
+  }
+}
+
+@layer components {
+  body {
+    color: rgb(var(--foreground-rgb));
+    background: rgb(var(--background-rgb));
+    font-family: 'stc-font', sans-serif;
+    visibility: visible;
+  }
+}
